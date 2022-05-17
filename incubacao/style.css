@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body, html{
+    background: #1abbb8;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+a {
+    color: #E9E9E9;
+}
+
+a:hover{
+    color: #F6921E;
+}
+
+.navbar-toggler {
+	border: none;
+}
+.navbar-toggler:focus {
+	outline: 0;
+}
+
+#f-navbar{
+    display: flex;
+    justify-content: end;
+}
+
+#f-navbar .nav-link {
+	font-size: 16px;
+	color: #fbfcfd;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+div.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar {
+	height: 80px;
+    padding-top: 20px;
+    transition: all 0.30s linear;
+    background-color: #002F2E;
+}
+.navbar.scroll {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    height: 80px;
+		background: white;	
+}
+.navbar.scroll #f-navbar a {
+	color: rgb(97, 97, 97);
+	font-weight: 500;
+
+}
+.navbar.scroll #f-navbar .nav-link.faca-parte {
+	color: #f6921e;
+
+}
+
+#f-navbar li{
+    margin-right: 20px;
+}
+
+.avatar {
+	background-image: url(../images/logo1.png);
+	padding-top: 90px;
+	background-size: contain;
+	transition: all 0.20s linear;
+	background-repeat: no-repeat;
+	width: 18%;
+	height: 0;
+
+}
+.navbar.scroll .avatar {
+	background-image: url(../images/logo1.png);
+	width: 170px;
+	padding-top:70px;
+	width: 20%;
+	transition: all 0.20s linear;
+}
+div#f-navbar.nav-item {
+	margin-top: 18px;
+	margin-right: 8px;
+}
+#f-navbar .nav-item:hover .nav-link {
+	color: #d6621e;
+	transition: .5s;
+}
+#f-navbar .nav-item:after {
+	content: '';
+	border-bottom: 2px solid #39857c;
+	display: block;
+	transition: .3s ease;
+	transform: scaleX(0);
+}
+#f-navbar .nav-item:hover:after {
+    transform: scaleX(1);
+}
+#f-navbar .nav-link.faca-parte {
+	color: #f6921e;
+	font-weight: 600;
+}
+#f-navbar .nav-item:hover .nav-link.faca-parte {
+	color: #d6621e;
+}
+
+#incubacao{
+    margin-top: 80px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#incubacao .row, .row h1{
+	color: #003B36;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#incubacao p{
+	margin: 30px 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+#title {
+	margin: 15px 0;
+}
+
+#incubacao img{
+    width: 55%;
+}
+
+#button{
+	background: url(../images/20\ -\ Copia.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 70px;
+}
+
+#button button{
+	width: 250px;
+	padding: 6px 20px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #003B36;
+	border-radius: 5px;
+	font-size: 23px;
+	transition: all ease 0.2s;
+}
+
+#button button:hover{
+	background-color: transparent;
+	color: #fff;
+}
+
+#incubados{
+	padding: 20px 0;
+	padding-bottom: 80px;
+	background-color: #f1f1f1;
+}
+
+#incubados #title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#incubados h1{
+	padding-bottom: 10px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	color: #00A89C;
+    border-bottom: 1px solid #686868;
+	width: 35%;
+}
+
+#incubados .incubado{
+	padding: 0 15px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 1px #cfcfcf;
+	border-radius: 5px;
+	height: 120px;
+	transition: all ease-out 0.2s;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#incubados .incubado:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+}
+
+#incubados .incubado img{
+	width: 100%;
+	opacity: 0.9;
+}
+
+#incubados .incubado img:hover{
+	filter: none;
+	opacity: 1;
+}
+
+#incubados #coluna1, #incubados #coluna2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#incubados #coluna2{
+	border-radius: 5px;
+	background: rgb(255,255,255);
+background: linear-gradient(150deg, rgba(255,255,255,1) 59%, rgba(0,168,156,0.3835147471910112) 100%);
+	border: 1px solid #cfcfcf;
+	transition: all ease-out 0.2s;
+}
+
+#incubados #coluna2 img{
+	max-width: 330px;
+}
+
+#etapas{
+	background: url(../images/redimencionado.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 150px;
+}
+
+#etapas h1, #etapas h3{
+	text-align: center;
+	color: #fff;
+	margin: 20px 0;
+}
+
+#etapas #coluna1{
+	background-color: #F6921E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 45px;
+}
+
+#etapas img{
+	width: 200px;
+}
+
+.etapa{
+	background-color: #fff;
+	padding: 30px 35px;
+	border-radius: 45px;
+	margin: 30px 0;
+	transform: scale(0.9);
+	transition: all ease-out 0.4s;
+}
+
+.etapa:hover{
+	transform: scale(0.95);
+}
+
+#etapas #coluna2{
+	padding: 0 50px;
+}
+
+#etapas #coluna2 h2{
+	font-size: 40px;
+	font-weight: 700;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#etapas #coluna2 p{
+	font-size: 24px;
+	font-weight: 500;
+	margin-top: 15px;
+}

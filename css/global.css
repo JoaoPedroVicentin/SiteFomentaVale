@@ -46,14 +46,14 @@
     border-right: 0.5px solid #616161;
 }
 
-#footer p, #footer a{
+#footer p, #footer #coluna2 a{
     color: #616161;
     font-size: 13px;
     margin-bottom: 0;
     text-decoration: none;
 }
 
-#footer button{
+#footer a.facebook, a.instagram, a.linkedin {
     width: 35px;
     height: 35px;
     display: flex;
@@ -66,17 +66,17 @@
     transition: 0.3s ease-in-out;
 }
 
-#footer button.facebook:hover{
+#footer a.facebook:hover{
     background: #00238d;
 }
-#footer button.instagram:hover{
+#footer a.instagram:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
-#footer button.linkedin:hover{
+#footer a.linkedin:hover{
     background: #2389e9;
 }
 
-#footer button img{
+#footer a img{
     width: 30px;
 }
 
